@@ -23,10 +23,11 @@ public class SpawnScore : MonoBehaviour
         // Spawn food every 10 seconds, starting in 10
         InvokeRepeating("spawnBoost", 10, 10);
 
-        // Spawn food every 30 seconds, starting in 30
-        InvokeRepeating("spawnBomb", 30, 30);
+        // Spawn food every 50 seconds, starting in 45
+        InvokeRepeating("spawnBomb", 45, 50);
     }
 
+    //Spawns object inside the borders randomly position
     void Spawn()
     {
         int x = (int)Random.Range(borderLeft.position.x, borderRight.position.x);

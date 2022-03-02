@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637813897879723839
-    m_Hash: 1197561154
+      ticks: 637818525843348828
+    m_Hash: 2880693379
   m_LockFileStatus:
     m_FilePath: C:/Users/Viktor/Documents/GitHub/viktor-lin-snake/Snake Assignment/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637813898069091438
-    m_Hash: 3466310726
+      ticks: 637818525843398873
+    m_Hash: 2080516332
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -783,6 +783,121 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
         revision: 3bc7fe2ab9acbe4538785fec6100ac17fe9e8da5
         path: 
+    - packageId: com.unity.connect.share@4.2.3
+      testable: 0
+      isDirectDependency: 1
+      version: 4.2.3
+      source: 1
+      resolvedPath: C:\Users\Viktor\Documents\GitHub\viktor-lin-snake\Snake Assignment\Library\PackageCache\com.unity.connect.share@4.2.3
+      assetPath: Packages/com.unity.connect.share
+      name: com.unity.connect.share
+      displayName: WebGL Publisher
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: This tool allows you to make a WebGL build of your current project
+        and upload it to Unity's website, where it can be shared with others.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview
+        - 1.0.1-preview
+        - 1.0.2-preview
+        - 1.0.3-preview
+        - 1.0.4-preview
+        - 1.0.5-preview
+        - 1.0.6-preview.2
+        - 1.0.7-preview
+        - 1.0.8-preview
+        - 1.0.9-preview
+        - 1.0.10-preview
+        - 1.1.0-preview.1
+        - 1.2.0-preview.1
+        - 2.0.1-preview
+        - 2.0.2-preview.3
+        - 2.0.2-preview.4
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 3.0.0
+        - 4.0.1
+        - 4.0.2
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.2.1
+        - 4.2.2
+        - 4.2.3
+        compatible:
+        - 1.0.0-preview
+        - 1.0.1-preview
+        - 1.0.2-preview
+        - 1.0.3-preview
+        - 1.0.4-preview
+        - 1.0.5-preview
+        - 1.0.6-preview.2
+        - 1.0.7-preview
+        - 1.0.8-preview
+        - 1.0.9-preview
+        - 1.0.10-preview
+        - 1.1.0-preview.1
+        - 1.2.0-preview.1
+        - 2.0.1-preview
+        - 2.0.2-preview.3
+        - 2.0.2-preview.4
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 3.0.0
+        - 4.0.1
+        - 4.0.2
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.2.1
+        - 4.2.2
+        - 4.2.3
+        verified: 
+      dependencies:
+      - name: com.unity.editorcoroutines
+        version: 1.0.0
+      - name: com.unity.settings-manager
+        version: 1.0.2
+      resolvedDependencies:
+      - name: com.unity.editorcoroutines
+        version: 1.0.0
+      - name: com.unity.settings-manager
+        version: 1.0.2
+      keywords:
+      - webgl
+      - share
+      - connect
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637695698090000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.connect.share.git
+        revision: 9a66a825d48494378f81fc94289eddd505df1c40
+        path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
       isDirectDependency: 1
@@ -896,12 +1011,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.11
+    - packageId: com.unity.ide.visualstudio@2.0.14
       testable: 0
       isDirectDependency: 1
-      version: 2.0.11
+      version: 2.0.14
       source: 1
-      resolvedPath: C:\Users\Viktor\Documents\GitHub\viktor-lin-snake\Snake Assignment\Library\PackageCache\com.unity.ide.visualstudio@2.0.11
+      resolvedPath: C:\Users\Viktor\Documents\GitHub\viktor-lin-snake\Snake Assignment\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -979,13 +1094,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613656180000000
+      datePublishedTicks: 637782923640000000
       documentationUrl: 
-      hasRepository: 1
+      hasRepository: 0
       repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 680e06d94ffca728223ae2cb14bb919cd354e2c1
+        type: 
+        url: 
+        revision: 
         path: 
     - packageId: com.unity.ide.vscode@1.2.4
       testable: 0
@@ -1059,6 +1174,223 @@ m_PackageAssets:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
         revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
+        path: 
+    - packageId: com.unity.quicksearch@2.0.2
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.2
+      source: 1
+      resolvedPath: C:\Users\Viktor\Documents\GitHub\viktor-lin-snake\Snake Assignment\Library\PackageCache\com.unity.quicksearch@2.0.2
+      assetPath: Packages/com.unity.quicksearch
+      name: com.unity.quicksearch
+      displayName: Quick Search
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'Search multiple areas of Unity: assets, scene objects, menu items,
+        packages, APIs, settings, etc.
+
+
+        On Windows simply press Alt+'' to
+        find anything or Option+'' on Mac.
+
+        Look in the shortcut manager
+        for additional Quick Search shortcut bindings.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.9.5-preview.1
+        - 0.9.6-preview.1
+        - 0.9.7-preview.3
+        - 0.9.9-preview.2
+        - 0.9.95-preview
+        - 1.0.0-preview.2
+        - 1.0.1-preview.1
+        - 1.0.9-preview.2
+        - 1.1.0-preview.1
+        - 1.2.0-preview.1
+        - 1.2.1-preview
+        - 1.2.2-preview
+        - 1.2.3-preview
+        - 1.2.4-preview
+        - 1.2.6-preview
+        - 1.2.7-preview
+        - 1.2.8-preview
+        - 1.2.9-preview
+        - 1.3.0-preview
+        - 1.3.1-preview
+        - 1.3.2-preview
+        - 1.4.1
+        - 1.4.2-preview.1
+        - 1.4.2-preview.2
+        - 1.4.2-preview.3
+        - 1.5.0-preview.1
+        - 1.5.0-preview.2
+        - 1.5.0-preview.3
+        - 1.5.0-preview.4
+        - 1.5.0-preview.5
+        - 1.5.0-preview.6
+        - 1.5.0
+        - 1.5.1
+        - 1.5.2-preview.1
+        - 1.5.2-preview.2
+        - 1.5.2
+        - 1.5.3
+        - 1.5.4
+        - 1.6.0-preview.1
+        - 1.6.0-preview.2
+        - 1.6.0-preview.3
+        - 1.6.0-preview.4
+        - 1.6.0-preview.5
+        - 1.6.0-preview.6
+        - 1.6.0-preview.7
+        - 1.6.0-preview.8
+        - 1.6.0-preview.9
+        - 2.0.0
+        - 2.0.2
+        - 2.1.0-preview.1
+        - 2.1.0-preview.2
+        - 2.1.0-preview.3
+        - 2.1.0-preview.4
+        - 2.1.0-preview.5
+        - 3.0.0-preview.1
+        - 3.0.0-preview.2
+        - 3.0.0-preview.3
+        - 3.0.0-preview.5
+        - 3.0.0-preview.6
+        - 3.0.0-preview.7
+        - 3.0.0-preview.8
+        - 3.0.0-preview.9
+        - 3.0.0-preview.10
+        - 3.0.0-preview.11
+        - 3.0.0-preview.12
+        - 3.0.0-preview.13
+        - 3.0.0-preview.14
+        - 3.0.0-preview.15
+        - 3.0.0-preview.16
+        - 3.0.0-preview.17
+        - 3.0.0-preview.18
+        - 3.0.0-preview.19
+        - 3.0.0-preview.20
+        - 3.0.0-preview.21
+        - 3.0.0-preview.22
+        - 3.0.0-preview.23
+        compatible:
+        - 0.9.5-preview.1
+        - 0.9.6-preview.1
+        - 0.9.7-preview.3
+        - 0.9.9-preview.2
+        - 0.9.95-preview
+        - 1.0.0-preview.2
+        - 1.0.1-preview.1
+        - 1.0.9-preview.2
+        - 1.1.0-preview.1
+        - 1.2.0-preview.1
+        - 1.2.1-preview
+        - 1.2.2-preview
+        - 1.2.3-preview
+        - 1.2.4-preview
+        - 1.2.6-preview
+        - 1.2.7-preview
+        - 1.2.8-preview
+        - 1.2.9-preview
+        - 1.3.0-preview
+        - 1.3.1-preview
+        - 1.3.2-preview
+        - 1.4.1
+        - 1.4.2-preview.1
+        - 1.4.2-preview.2
+        - 1.4.2-preview.3
+        - 1.5.0-preview.1
+        - 1.5.0-preview.2
+        - 1.5.0-preview.3
+        - 1.5.0-preview.4
+        - 1.5.0-preview.5
+        - 1.5.0-preview.6
+        - 1.5.0
+        - 1.5.1
+        - 1.5.2-preview.1
+        - 1.5.2-preview.2
+        - 1.5.2
+        - 1.5.3
+        - 1.5.4
+        - 1.6.0-preview.1
+        - 1.6.0-preview.2
+        - 1.6.0-preview.3
+        - 1.6.0-preview.4
+        - 1.6.0-preview.5
+        - 1.6.0-preview.6
+        - 1.6.0-preview.7
+        - 1.6.0-preview.8
+        - 1.6.0-preview.9
+        - 2.0.0
+        - 2.0.2
+        - 2.1.0-preview.1
+        - 2.1.0-preview.2
+        - 2.1.0-preview.3
+        - 2.1.0-preview.4
+        - 2.1.0-preview.5
+        - 3.0.0-preview.1
+        - 3.0.0-preview.2
+        - 3.0.0-preview.3
+        - 3.0.0-preview.5
+        - 3.0.0-preview.6
+        - 3.0.0-preview.7
+        - 3.0.0-preview.8
+        - 3.0.0-preview.9
+        - 3.0.0-preview.10
+        - 3.0.0-preview.11
+        - 3.0.0-preview.12
+        - 3.0.0-preview.13
+        - 3.0.0-preview.14
+        - 3.0.0-preview.15
+        - 3.0.0-preview.16
+        - 3.0.0-preview.17
+        - 3.0.0-preview.18
+        - 3.0.0-preview.19
+        - 3.0.0-preview.20
+        - 3.0.0-preview.21
+        - 3.0.0-preview.22
+        - 3.0.0-preview.23
+        verified: 2.0.2
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - unity
+      - editor
+      - omni
+      - tool
+      - quick
+      - search
+      - assets
+      - menu
+      - scene
+      - api
+      - packages
+      - anything
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637293829350000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.quicksearch.git
+        revision: 4d5c0f54be26662a75c6c9d71d0f5354d4379fe8
         path: 
     - packageId: com.unity.test-framework@1.1.29
       testable: 0
@@ -3352,6 +3684,128 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
+    - packageId: com.unity.editorcoroutines@1.0.0
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.0
+      source: 1
+      resolvedPath: C:\Users\Viktor\Documents\GitHub\viktor-lin-snake\Snake Assignment\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+      assetPath: Packages/com.unity.editorcoroutines
+      name: com.unity.editorcoroutines
+      displayName: Editor Coroutines
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'The editor coroutines package allows developers to start constructs
+        similar to Unity''s monobehaviour based coroutines within the editor using
+        abitrary objects. '
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.1-preview.3
+        - 0.0.1-preview.4
+        - 0.0.1-preview.5
+        - 0.0.2-preview.1
+        - 0.1.0-preview.1
+        - 0.1.0-preview.2
+        - 1.0.0
+        compatible:
+        - 0.0.1-preview.3
+        - 0.0.1-preview.4
+        - 0.0.1-preview.5
+        - 0.0.2-preview.1
+        - 0.1.0-preview.1
+        - 0.1.0-preview.2
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - coroutine
+      - coroutines
+      - editor
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637232611380000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.editorcoroutines.git
+        revision: f67fc9992bbc7a553b17375de53a8b2db136528e
+        path: 
+    - packageId: com.unity.settings-manager@1.0.2
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.2
+      source: 1
+      resolvedPath: C:\Users\Viktor\Documents\GitHub\viktor-lin-snake\Snake Assignment\Library\PackageCache\com.unity.settings-manager@1.0.2
+      assetPath: Packages/com.unity.settings-manager
+      name: com.unity.settings-manager
+      displayName: Settings Manager
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: A framework for making any serializable field a setting, complete
+        with a pre-built settings interface.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.0-preview.4
+        - 0.1.0-preview.8
+        - 1.0.0
+        - 1.0.1
+        - 1.0.2
+        - 1.0.3
+        compatible:
+        - 0.1.0-preview.4
+        - 0.1.0-preview.8
+        - 1.0.0
+        - 1.0.1
+        - 1.0.2
+        - 1.0.3
+        verified: 1.0.3
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637187671360000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Unity-Technologies/com.unity.settings-manager.git
+        revision: e8eedc87ca7850bac0f7b2257db4edb8c300a0f3
+        path: 
     - packageId: com.unity.mathematics@1.1.0
       testable: 0
       isDirectDependency: 0
@@ -3387,6 +3841,8 @@ m_PackageAssets:
         - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
+        - 1.2.4
+        - 1.2.5
         compatible:
         - 0.0.12-preview.2
         - 0.0.12-preview.5
@@ -3402,7 +3858,9 @@ m_PackageAssets:
         - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
-        verified: 1.2.1
+        - 1.2.4
+        - 1.2.5
+        verified: 1.2.5
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -3458,12 +3916,15 @@ m_PackageAssets:
         - 2.0.1
         - 2.0.2
         - 2.1.0
+        - 2.1.1
         - 3.0.0
         - 3.0.1
         - 4.0.0
         - 4.0.1
         - 4.0.2
         - 4.0.3
+        - 4.0.4
+        - 4.1.0
         - 5.0.0-pre.1
         - 5.0.0-pre.2
         - 5.0.0
@@ -3471,9 +3932,16 @@ m_PackageAssets:
         - 6.0.0-pre.3
         - 6.0.0-pre.4
         - 6.0.0
+        - 6.0.1
+        - 6.0.2
+        - 6.0.3
+        - 7.0.0-pre.3
+        - 7.0.0-pre.4
+        - 7.0.0
         compatible:
         - 4.0.3
-        verified: 4.0.3
+        - 4.0.4
+        verified: 4.0.4
       dependencies:
       - name: com.unity.2d.sprite
         version: 1.0.0
@@ -3555,6 +4023,7 @@ m_PackageAssets:
         - 5.0.0-pre.2
         - 5.0.0
         - 5.0.1
+        - 5.0.2
         compatible:
         - 4.0.2
         verified: 4.0.2

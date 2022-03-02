@@ -20,31 +20,35 @@ public class control : MonoBehaviour
     bool ate = false;
 
 
-    void Start()
+    private void Start()
     {
         //moves every 0,3s
         InvokeRepeating("Move", 0.3f, speed);
     }
-    void OnTriggerEnter2D(Collider2D coll)
+    private void OnTriggerEnter2D(Collider2D coll)
     {
+        //Different function activates on different object
         if (coll.name.StartsWith("score"))
         {
             ate = true;
 
+            ScoreManager.instance.AddScore();
+
             Destroy(coll.gameObject);
         }
-        else if (coll.name.StartsWith("Boost"))
+        else if (coll.name.StartsWith("boost"))
         {
-            this.speed += 0.5f;
+            speed += 0.6f;
             Destroy(coll.gameObject);
         }
+        //Game over when you collide both tail or bomb
         else if (coll.name.StartsWith("Tail"))
         {
             gameOverUI.SetActive(true);
             Time.timeScale = 0f;
             isDead = true;
         }
-        else if (coll.name.StartsWith("Bomb"))
+        else if (coll.name.StartsWith("bomb"))
         {
             gameOverUI.SetActive(true);
             Time.timeScale = 0f;
@@ -54,25 +58,23 @@ public class control : MonoBehaviour
         //Screenrap, where the snake comes out from other side when entering the border
         else if (coll.gameObject.CompareTag("Right"))
         {
-            transform.position = new Vector3(-27, transform.position.y, transform.position.z);
-            Debug.Log("Hit");
-
+            transform.position = new Vector3(-55, transform.position.y, transform.position.z);
+            //Debug.Log("Hit");
         }
-
         else if (coll.gameObject.CompareTag("Left"))
         {
-            transform.position = new Vector3(27, transform.position.y, transform.position.z);
+            transform.position = new Vector3(15, transform.position.y, transform.position.z);
         }
-        else if (coll.gameObject.CompareTag("Up"))
+        else if (coll.gameObject.CompareTag("Top"))
         {
 
-            transform.position = new Vector3(transform.position.x, -16, transform.position.z);
+            transform.position = new Vector3(transform.position.x, -25, transform.position.z);
 
         }
-        else if (coll.gameObject.CompareTag("Down"))
+        else if (coll.gameObject.CompareTag("Bot"))
         {
 
-            transform.position = new Vector3(transform.position.x, 16, transform.position.z);
+            transform.position = new Vector3(transform.position.x, 25, transform.position.z);
 
         }
     }
@@ -92,14 +94,15 @@ public class control : MonoBehaviour
         {
             dir = -Vector3.right;
         }
-        else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) 
         {
             dir = Vector3.up;
         }
     }
 
-    void Move()
+    private void Move()
     {
+        //The tail moves after the head
         Vector3 v = transform.position;
 
         transform.Translate(dir);
