@@ -5,18 +5,25 @@ using System.Linq;
 
 public class control : MonoBehaviour
 {
+    //Script for the snake
+    private float speed = 0.3f;
+
     Vector3 dir = Vector3.right;
 
     List<Transform> tail = new List<Transform>();
 
+    public GameObject tailPrefab;
+
+    public GameObject gameOverUI;
+
+    public static bool isDead = false;
     bool ate = false;
 
-    public GameObject tailPrefab;
 
     void Start()
     {
         //moves every 0,3s
-        InvokeRepeating("Move", 0.3f, 0.3f);
+        InvokeRepeating("Move", 0.3f, speed);
     }
     void OnTriggerEnter2D(Collider2D coll)
     {
@@ -26,21 +33,70 @@ public class control : MonoBehaviour
 
             Destroy(coll.gameObject);
         }
-        else
+        else if (coll.name.StartsWith("Boost"))
         {
-            // ToDo 'You lose' screen
+            this.speed += 0.5f;
+            Destroy(coll.gameObject);
+        }
+        else if (coll.name.StartsWith("Tail"))
+        {
+            gameOverUI.SetActive(true);
+            Time.timeScale = 0f;
+            isDead = true;
+        }
+        else if (coll.name.StartsWith("Bomb"))
+        {
+            gameOverUI.SetActive(true);
+            Time.timeScale = 0f;
+            isDead = true;
+        }
+
+        //Screenrap, where the snake comes out from other side when entering the border
+        else if (coll.gameObject.CompareTag("Right"))
+        {
+            transform.position = new Vector3(-27, transform.position.y, transform.position.z);
+            Debug.Log("Hit");
+
+        }
+
+        else if (coll.gameObject.CompareTag("Left"))
+        {
+            transform.position = new Vector3(27, transform.position.y, transform.position.z);
+        }
+        else if (coll.gameObject.CompareTag("Up"))
+        {
+
+            transform.position = new Vector3(transform.position.x, -16, transform.position.z);
+
+        }
+        else if (coll.gameObject.CompareTag("Down"))
+        {
+
+            transform.position = new Vector3(transform.position.x, 16, transform.position.z);
+
         }
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) dir = Vector3.right;
-        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) dir = -Vector3.up;
-        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) dir = -Vector3.right;
-        else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) dir = Vector3.up;
-
+        //using both arrow keys and wasd to change direction
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        {
+            dir = Vector3.right;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            dir = -Vector3.up;
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        {
+            dir = -Vector3.right;
+        }
+        else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            dir = Vector3.up;
+        }
     }
-
 
     void Move()
     {
@@ -56,7 +112,7 @@ public class control : MonoBehaviour
 
             ate = false;
         }
-        // Do we have a Tail?
+
         else if (tail.Count > 0)
         {
             tail.Last().position = v;
@@ -65,5 +121,6 @@ public class control : MonoBehaviour
             tail.RemoveAt(tail.Count - 1);
         }
     }
+
 }
 
